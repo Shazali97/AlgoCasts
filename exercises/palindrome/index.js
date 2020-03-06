@@ -7,6 +7,20 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-function palindrome(str) {}
+// My Solution
+function palindrome(str) {
+    let rev = str.split("").reverse().join("")
+    return str === rev
+}
 
 module.exports = palindrome;
+
+
+// 2nd solutions
+// Start from this and improve to a better way
+// Will show interviewer that you know how to solve multiple ways
+// function palindrome(str) {
+//     return str.split("").every((char, i) => {
+//         return char === str[str.length - i - 1];
+//     });
+// }
