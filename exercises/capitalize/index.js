@@ -7,6 +7,10 @@
 //   capitalize('a lazy fox') --> 'A Lazy Fox'
 //   capitalize('look, it is working!') --> 'Look, It Is Working!'
 
-function capitalize(str) {}
+
+
+capitalize('wow what a shitty day');
 
 module.exports = capitalize;
+
+// My Solution
