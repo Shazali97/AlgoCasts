@@ -10,6 +10,24 @@
 //   s.pop(); // returns 2
 //   s.pop(); // returns 1
 
-class Stack {}
+class Stack {
+    constructor() { // initializes
+        this.data = [];
+    }
+
+    push(record) {
+        // adds to last index of array
+        this.data.push(record);
+    }
+
+    pop() {
+        return this.data.pop();
+    }
+
+    peek() {
+        // view last elm in array
+        return this.data[this.data.length - 1];
+    }
+}
 
 module.exports = Stack;
