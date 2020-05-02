@@ -14,6 +14,20 @@ function vowels(str) {
 
 module.exports = vowels;
 
+// ** GOOD **
+// function vowels(str) {
+//   let count = 0;
+//   const checker = ['a', 'e', 'i', 'o', 'u'];
+//
+//   for (let char of str.toLowerCase()) {
+//     if (checker.includes(char)) {
+//       count++;
+//     }
+//   }
+//
+//   return count;
+// }
+
 // My Solution
 // function vowels(str) {
 //     // let reg = new RegExp(/[a]+[e]+[i]+[o]+[u]/, "gm");

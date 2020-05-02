@@ -18,6 +18,14 @@ function reverse(str) {
     return newStr
 }
 
+/*
+    Runtime Complexity;
+    
+    Each additional characted = 1 step through 1 loop
+
+    'n' or 'linear' Runtime
+*/
+
 module.exports = reverse;
 
 // 1st Solution 
