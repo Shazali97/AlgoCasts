@@ -1,0 +1,38 @@
+How To Build Twitter:
+
+High Level Notes
+1.) There is NO right answer
+    - thousands of devs built Twitter, they aren't expecting you to give a right answer
+2.) Every interviewer will expect a different answer
+3.) Focus is usually on the data model
+    - database model/architecture
+4.) Don't mention specific technologies
+    - list out qualities and attributes of what's needed
+5.) Draw Stuff
+    - design and plan
+6.) Talk
+    - communicate
+
+General Strategy:
+1.) Identify Two/Three Core Features (corresponds to #5 above)
+    - How a tweet works, user feed
+    - Web interface, sending POST request to DB
+2.) Possible Implementation
+3.) Identify and Address Difficulties
+    - How DB looks like
+    - Sending a tweet with @ or #
+    - Displaying a tweet
+4.) Solutions for Scaling
+    - Unfair if interviewer expects concrete ideas
+    - general strategies are better
+    - caching data from DB for scaling users
+    - server architecture
+    • Caching (brush up on -- used for many solutions):
+        - User ABC asks server for tweets, db provides computationally expensive info
+        - Send to user and store it in Memory Store (memcache, redis)
+        - User comes back and is able to see Memory Store
+    • Deployment Options:
+        - User -> Load Balancer
+        - Load Balancer randomly assigns request to any server
+            - Horizontal Scaling
+        
